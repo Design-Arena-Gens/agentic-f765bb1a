@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --color-base: #050505;
+  --color-cream: #f2ecdf;
+  --color-soft: #0f0f0f;
+  --color-muted: rgba(255, 255, 255, 0.65);
+  --color-accent: #c7b08b;
+}
+
+@theme inline {
+  --color-base: var(--color-base);
+  --color-cream: var(--color-cream);
+  --color-soft: var(--color-soft);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--color-accent);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(199, 176, 139, 0.12), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(242, 236, 223, 0.15), transparent 40%),
+    linear-gradient(160deg, #050505 0%, #0a0a0a 50%, #050505 100%);
+  color: var(--color-cream);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
